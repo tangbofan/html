@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width:600px;height:280px;">
+        <legend style="color:red;font-size: 24px;">网页换肤</legend>
+        <div style="width:580px;height:60px;border:1px solid grey;top:90px;position:absolute;">
+            <input type="button" style="background-color:#a8a8a8;width:25px;height:25px;top:15px;left:10px;position: absolute;"  id="c">
+            <input type="button" style="background-color:#9c6ec8;width:25px;height:25px;top:15px;left:50px;position: absolute;"  id="d">
+            <input type="button" style="background-color:#fcccf4;width:25px;height:25px;top:15px;left:90px;position: absolute;"  id="e">
+            <input type="button" style="background-color:#98faff;width:25px;height:25px;top:15px;left:130px;position: absolute;" id="f">
+            <input type="button" style="background-color:#fffe27;width:25px;height:25px;top:15px;left:170px;position: absolute;" id="g">
+            <input type="button" style="background-color:#1dfe4a;width:25px;height:25px;top:15px;left:210px;position: absolute;" id="h" >
+        </div>
+        <p style="background-color: #a8a8a8;width:530px;height:85px;top:120px;left:25px;position: relative;font-size:18px;" id="p">LocalStorage将数据保存在客户端本地的硬件设备中，即使浏览器被关闭了，该数据仍然存在，下次打开浏览器访问网站时仍然可以继续使用</p>
+    </fieldset>
+</body>
+    <script>
+        var c=document.getElementById("c");
+        var i=1;
+        c.onclick=function(){
+            p.style.backgroundColor=c.style.backgroundColor;
+            if(i){
+                c.style.top=(c.offsetTop-5)+"px";
+                i=0;
+                if(c.style.top==d.style.top){
+                    d.style.top=(d.offsetTop+5)+"px";
+                }
+                if(c.style.top==e.style.top){
+                    e.style.top=(e.offsetTop+5)+"px";
+                }
+                if(c.style.top==f.style.top){
+                    f.style.top=(f.offsetTop+5)+"px";
+                }
+                if(c.style.top==g.style.top){
+                    g.style.top=(g.offsetTop+5)+"px";
+                }
+                if(c.style.top==h.style.top){
+                    h.style.top=(h.offsetTop+5)+"px";
+                }
+                m++;
+                l++;
+                k++;
+                j++;
+                a++;
+                localStorage.setItem("sticky", c.style.backgroundColor);
+                localStorage.removeItem("sticky1");
+                localStorage.removeItem("sticky2");
+                localStorage.removeItem("sticky3");
+                localStorage.removeItem("sticky4");
+                localStorage.removeItem("sticky5");
+            }   
+        }
+        var d=document.getElementById("d");
+        var m=1;
+        d.onclick=function(){
+            p.style.backgroundColor=d.style.backgroundColor;
+            if(m){
+                d.style.top=(d.offsetTop-5)+"px";
+                m=0;
+                if(d.style.top==c.style.top){
+                    c.style.top=(c.offsetTop+5)+"px";
+                }
+                if(d.style.top==e.style.top){
+                    e.style.top=(e.offsetTop+5)+"px";
+                }
+                if(d.style.top==f.style.top){
+                    f.style.top=(f.offsetTop+5)+"px";
+                }
+                if(d.style.top==g.style.top){
+                    g.style.top=(g.offsetTop+5)+"px";
+                }
+                if(d.style.top==h.style.top){
+                    h.style.top=(h.offsetTop+5)+"px";
+                }
+                i++;
+                l++;
+                k++;
+                j++;
+                a++;
+                localStorage.setItem("sticky1", d.style.backgroundColor);
+                localStorage.removeItem("sticky");
+                localStorage.removeItem("sticky2");
+                localStorage.removeItem("sticky3");
+                localStorage.removeItem("sticky4");
+                localStorage.removeItem("sticky5");
+            }
+        }
+        
+        var e=document.getElementById("e");
+        var l=1;
+        e.onclick=function(){
+            p.style.backgroundColor=e.style.backgroundColor;
+            if(l){
+                e.style.top=(e.offsetTop-5)+"px";
+                l=0;
+                if(e.style.top==c.style.top){
+                    c.style.top=(c.offsetTop+5)+"px";
+                }
+                if(e.style.top==d.style.top){
+                    d.style.top=(d.offsetTop+5)+"px";
+                }
+                if(e.style.top==f.style.top){
+                    f.style.top=(f.offsetTop+5)+"px";
+                }
+                if(e.style.top==g.style.top){
+                    g.style.top=(g.offsetTop+5)+"px";
+                }
+                if(e.style.top==h.style.top){
+                    h.style.top=(h.offsetTop+5)+"px";
+                }
+                m++;
+                i++;
+                k++;
+                j++;
+                a++;
+                localStorage.setItem("sticky2", e.style.backgroundColor);
+                localStorage.removeItem("sticky1");
+                localStorage.removeItem("sticky");
+                localStorage.removeItem("sticky3");
+                localStorage.removeItem("sticky4");
+                localStorage.removeItem("sticky5");
+            }      
+        }
+       
+        var f=document.getElementById("f");
+        var k=1;
+        f.onclick=function(){
+            p.style.backgroundColor=f.style.backgroundColor;
+            if(k){
+                f.style.top=(f.offsetTop-5)+"px";
+                k=0;
+                if(f.style.top==c.style.top){
+                    c.style.top=(c.offsetTop+5)+"px";
+                }
+                if(f.style.top==e.style.top){
+                    e.style.top=(e.offsetTop+5)+"px";
+                }
+                if(f.style.top==d.style.top){
+                    d.style.top=(d.offsetTop+5)+"px";
+                }
+                if(f.style.top==g.style.top){
+                    g.style.top=(g.offsetTop+5)+"px";
+                }
+                if(f.style.top==h.style.top){
+                    h.style.top=(h.offsetTop+5)+"px";
+                }
+                m++;
+                l++;
+                i++;
+                j++;
+                a++;
+                localStorage.setItem("sticky3", f.style.backgroundColor);
+                localStorage.removeItem("sticky1");
+                localStorage.removeItem("sticky2");
+                localStorage.removeItem("sticky");
+                localStorage.removeItem("sticky4");
+                localStorage.removeItem("sticky5");
+            }
+        }
+        
+        var g=document.getElementById("g");
+        var j=1;
+        g.onclick=function(){
+            p.style.backgroundColor=g.style.backgroundColor;
+            if(j){
+                g.style.top=(g.offsetTop-5)+"px";
+                j=0;
+                if(g.style.top==d.style.top){
+                    d.style.top=(d.offsetTop+5)+"px";
+                }
+                if(g.style.top==e.style.top){
+                    e.style.top=(e.offsetTop+5)+"px";
+                }
+                if(g.style.top==f.style.top){
+                    f.style.top=(f.offsetTop+5)+"px";
+                }
+                if(g.style.top==c.style.top){
+                    c.style.top=(c.offsetTop+5)+"px";
+                }
+                if(g.style.top==h.style.top){
+                    h.style.top=(h.offsetTop+5)+"px";
+                }
+                m++;
+                l++;
+                k++;
+                i++;
+                a++;
+                localStorage.setItem("sticky4", g.style.backgroundColor);
+                localStorage.removeItem("sticky1");
+                localStorage.removeItem("sticky2");
+                localStorage.removeItem("sticky3");
+                localStorage.removeItem("sticky");
+                localStorage.removeItem("sticky5");
+                
+            }
+        }
+       
+        var h=document.getElementById("h");
+        var a=1;
+        h.onclick=function(){
+            p.style.backgroundColor=h.style.backgroundColor;
+            if(a){
+                h.style.top=(h.offsetTop-5)+"px";
+                a=0;
+                if(h.style.top==d.style.top){
+                    d.style.top=(d.offsetTop+5)+"px";
+                }
+                if(h.style.top==e.style.top){
+                    e.style.top=(e.offsetTop+5)+"px";
+                }
+                if(h.style.top==f.style.top){
+                    f.style.top=(f.offsetTop+5)+"px";
+                }
+                if(h.style.top==g.style.top){
+                    g.style.top=(g.offsetTop+5)+"px";
+                }
+                if(h.style.top==c.style.top){
+                    c.style.top=(c.offsetTop+5)+"px";
+                }
+                m++;
+                l++;
+                k++;
+                j++;
+                i++;
+                localStorage.setItem("sticky5", h.style.backgroundColor);
+                localStorage.removeItem("sticky1");
+                localStorage.removeItem("sticky2");
+                localStorage.removeItem("sticky3");
+                localStorage.removeItem("sticky4");
+                localStorage.removeItem("sticky");
+               
+            } 
+            
+        }
+        window.onload=function(){
+            if(localStorage.getItem("sticky1")==null&&localStorage.getItem("sticky2")==null&&localStorage.getItem("sticky3")==null&&localStorage.getItem("sticky4")==null&&localStorage.getItem("sticky5")==null&&localStorage.getItem("sticky")==null){
+                p.style.backgroundColor=c.style.backgroundColor;
+            }
+            if(localStorage.getItem("sticky1")==null&&localStorage.getItem("sticky2")==null&&localStorage.getItem("sticky3")==null&&localStorage.getItem("sticky4")==null&&localStorage.getItem("sticky5")==null&&localStorage.getItem("sticky")!=null){
+                p.style.backgroundColor=localStorage.getItem("sticky");
+            }
+            if(localStorage.getItem("sticky1")!=null&&localStorage.getItem("sticky2")==null&&localStorage.getItem("sticky3")==null&&localStorage.getItem("sticky4")==null&&localStorage.getItem("sticky5")==null&&localStorage.getItem("sticky")==null){
+                p.style.backgroundColor=localStorage.getItem("sticky1");
+            }
+            if(localStorage.getItem("sticky1")==null&&localStorage.getItem("sticky2")!=null&&localStorage.getItem("sticky3")==null&&localStorage.getItem("sticky4")==null&&localStorage.getItem("sticky5")==null&&localStorage.getItem("sticky")==null){
+                p.style.backgroundColor=localStorage.getItem("sticky2");
+            }
+            if(localStorage.getItem("sticky1")==null&&localStorage.getItem("sticky2")==null&&localStorage.getItem("sticky3")!=null&&localStorage.getItem("sticky4")==null&&localStorage.getItem("sticky5")==null&&localStorage.getItem("sticky")==null){
+                p.style.backgroundColor=localStorage.getItem("sticky3");
+            }
+            if(localStorage.getItem("sticky1")==null&&localStorage.getItem("sticky2")==null&&localStorage.getItem("sticky3")==null&&localStorage.getItem("sticky4")!=null&&localStorage.getItem("sticky5")==null&&localStorage.getItem("sticky")==null){
+                p.style.backgroundColor=localStorage.getItem("sticky4");
+            }
+            if(localStorage.getItem("sticky1")==null&&localStorage.getItem("sticky2")==null&&localStorage.getItem("sticky3")==null&&localStorage.getItem("sticky4")==null&&localStorage.getItem("sticky5")!=null&&localStorage.getItem("sticky")==null){
+                p.style.backgroundColor=localStorage.getItem("sticky5");
+            }
+        }
+      
+    </script>
+
+</html>
